@@ -82,6 +82,8 @@ private IEnumerator GetWeatherData(double latitude, double longitude)
 📂 **Location:** `Assets/Samples~/GetTemperatureDemo.unity`
 
 ## 🛠️ Test Build
+The test build features a single button that, when clicked, requests location permission. Upon granting permission, a weather API call is made, and the current temperature is displayed to the user using CleverTap Toasts. 🚀
+
 📂 **Location:** `Builds/`
 
 ## 🛠 Project Architecture
