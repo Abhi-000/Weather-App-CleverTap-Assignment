@@ -1,10 +1,25 @@
 # Weather App (Unity Test Project)
 
-🚀 **A Unity-based weather application fetching real-time weather updates using a weather API.**
+🚀 **A Unity-based weather application fetching real-time weather updates using a weather API and displaying them through CleverTap's Toast Messaging system.**
 
 
 ## 📌 Disclaimer
 This project is developed as part of a Unity SDK developer assignment and is not an official weather application. It serves as a demonstration of API integration, location handling, and UI interaction
+
+## ⚙️ Tech Stack
+
+ - Unity 2022.3.57f1 LTS
+ - UnityWebRequest (for API calls)
+ - CleverTap SDK (for Toast Notifications)
+ - TextMeshPro (for UI elements)
+
+## 📍 Features
+
+ - Fetches current weather based on the user's real-time location.
+ - Displays temperature updates using CleverTap Toast messages.
+ - Permission handling for accessing location data.
+
+
 ## 📦 Installation
 
 ### **1️⃣ Clone the Repository**
@@ -82,9 +97,15 @@ private IEnumerator GetWeatherData(double latitude, double longitude)
 📂 **Location:** `Assets/Samples~/GetTemperatureDemo.unity`
 
 ## 🛠️ Test Build
-The test build features a single button that, when clicked, requests location permission. Upon granting permission, a weather API call is made, and the current temperature is displayed to the user using CleverTap Toasts. 🚀
 
 📂 **Location:** `Builds/`
+
+The test build features a single button that, when clicked:
+1. Requests location permission.
+2. If granted, makes a weather API call.
+3. Displays current temperature using CleverTap Toasts.
+
+
 
 ## 🛠 Project Architecture
 
