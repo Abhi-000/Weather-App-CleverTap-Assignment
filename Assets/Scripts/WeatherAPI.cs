@@ -12,7 +12,9 @@ public class WeatherAPI : MonoBehaviour
     private const string API_ENDPOINT = "https://api.open-meteo.com/v1/forecast";
 
     public Action<WeatherData> OnWeatherDataReceived;
+    [HideInInspector]
     public bool weatherDataReqReceived = false;
+    [HideInInspector]
     public double receivedLat, receivedLon;
 
     public virtual void FetchWeatherData(double latitude, double longitude)
