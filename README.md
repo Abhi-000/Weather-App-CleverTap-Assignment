@@ -12,6 +12,7 @@ This project is developed as part of a Unity SDK developer assignment and is not
  - UnityWebRequest (for API calls)
  - CleverTap SDK (for Toast Notifications)
  - TextMeshPro (for UI elements)
+ - NUnit Framework and Unity Test Framework(For Unit Testing)
 
 ## 📍 Features
 
