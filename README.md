@@ -1,4 +1,4 @@
-# Weather App (Unity Project)
+# Weather App (Unity Test Project)
 
 🚀 **A Unity-based weather application fetching real-time weather updates using a weather API.**
 
