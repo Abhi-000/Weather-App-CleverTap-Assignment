@@ -44,6 +44,8 @@ public class PermissionsManager : MonoBehaviour
 
     public IEnumerator WaitForPermission()
     {
+        yield return new WaitForSeconds(0.5f);
+
         yield return new WaitUntil(() => HasPermission() || PermissionDenied());
         if (HasPermission())
         {
@@ -54,6 +56,7 @@ public class PermissionsManager : MonoBehaviour
         {
             OnLocationPermissionGranted?.Invoke(false);
             ShowPermissionDeniedMessage();
+            
         }
     }
 
